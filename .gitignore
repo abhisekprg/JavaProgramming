@@ -1,0 +1,95 @@
+# Maven #
+/build/
+/bin/
+target/
+mvnw
+mvnw.cmd
+.mvn
+.mvn/**
+maven-wrapper.jar
+maven-wrapper.properties
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.idea
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+# Compiled class file #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log file
+*.log
+
+# Folder config file
+Desktop.ini
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# Eclipse #
+
+*.pydevproject
+.project
+.idea
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.factorypath
+.apt_generated/
+.settings/
+.loadpath
+/src/main/resources/rebel.xml
+.springBeans
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
