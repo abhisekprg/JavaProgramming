@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <bean name="collection1" class="com.springcore.collections.Emp">
+ <property name="name" value="radhe"/>
+ <property name="phones">
+ 	<list>
+ 	<value>947532</value>
+ 	<value>457869</value>
+ 	<value>325963</value>
+ 	<value>943563</value>
+ 	<value>759864</value>
+ 	</list >
+ </property>
+ <property name="addresses">
+ <set>
+ <value>kolkata</value>
+ 	<value>dehradun</value>
+ 	<value>punjab</value>
+ 	<value>chandigarh</value>
+ 	<value>jammu</value>
+ 
+ </set>
+ </property>
+ <property name="courses">
+ <map>
+ <entry key="java" value="1months"/>
+ <entry key="sql" value="1week"/>
+ <entry key="resful api" value="1week"/>
+ <entry key="spring" value="10days"/>
+ <entry key="hibernate" value="5 days"/>
+ </map>
+  </property>
+ 
+ <property name="props">
+ <props>
+ <prop key="userName">durgesh</prop>
+ <prop key="password">CodeWithDurgesh</prop>
+ 
+ </props>
+ 
+ 
+ 
+ </property>
+ </bean>
+ </beans>
+ 

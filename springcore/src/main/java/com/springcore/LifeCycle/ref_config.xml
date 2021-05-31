@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <bean class ="com.springcore.ref.B" name="b_ref">
+<property name="y" value="10"/>
+ </bean>
+ <!-- 1.property method -->
+ <bean class="com.springcore.ref.A" name="a_ref">
+ <property name="x" value="55"/>
+ <property name="ob">
+ <ref bean="b_ref"/>
+ 
+ <!-- 2.using attributes -->
+ <property name="ob" ref="b_ref"/>
+ 
+ <!--  3.using p schema -->
+ <bean class="com.springcore.ref.A" name="a_ref" p:x="55" p:ob-ref="b_ref"/>
+
+ </property>
+ </bean>
+ </beans>
+ 
